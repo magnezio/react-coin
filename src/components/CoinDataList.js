@@ -15,13 +15,12 @@ export class CoinDataList extends React.Component {
                 }
             }
         )
-        console.log(result);
         return result;
     }
     render() {
         return (
             <div>
-                <table border="1" className="coinData-table">
+                <table className="coinData-table">
                     {this.tableRows()}
                 </table>
             </div>
