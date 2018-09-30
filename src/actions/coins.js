@@ -16,7 +16,7 @@ const getCoinsFail = () => ({
 
 export const getCoins = () => {
     return (dispatch) => {
-        axios.get(`${Config.apiUrl}/coins/`)
+        axios.get(`${Config.apiUrl}/coins`)
         .then((res)=>{
             dispatch(getCoinsSuccess(res.data))
         })
