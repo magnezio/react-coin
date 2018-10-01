@@ -1,5 +1,5 @@
 const Config = {
-    apiUrl: 'http://coincap.io',
+    apiUrl: 'https://coincap.io',
 };
   
 module.exports = Config;
