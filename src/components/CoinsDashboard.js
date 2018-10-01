@@ -1,8 +1,8 @@
 import React from 'react';
-import {connect} from 'react-redux';
 
 import CoinsListFilters from './CoinListFilters';
 import CoinDataList from './CoinDataList';
+import Costs from './Costs';
 
 export default class CoinsDashboard extends React.Component {
     getCoinData = (coinName) => {
@@ -11,11 +11,10 @@ export default class CoinsDashboard extends React.Component {
     render() {
         return (
             <div>
+                <Costs />
                 <CoinsListFilters />
                 <CoinDataList />
             </div>
         )
     }
 }
-
-// export default connect(undefined, undefined)(CoinsDashboard);
